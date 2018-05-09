@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+}
+.wrapper {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 600px;
+    height: 600px;
+}
+.box {
+    padding: 2rem;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+#top-1, #top-2, #mid-1, #mid-2 {
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+
+}
+#top-3, #mid-3 {
+    border-bottom: 2px solid #000;
+}
+#bot-1, #bot-2 {
+    border-right: 2px solid #000;
+}

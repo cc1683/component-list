@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+    <title>ParticlesJS interface</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col justify-content-center text-center my-5">
+                <h1>ParticlesJS Interface</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-3">
+        <div class="row" id="particle-container">
+            <div class="col-12">
+                <div id="particles-js">
+                    <div class="center-content">
+                        <div class="content-wrapper">
+                            <h1>ParticleJS is FUN</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('Particles.js config successfully');
+    });
+</script>
+
+<style>
+    body {
+        overflow-x: hidden;
+    }
+    #particles-js {
+        background: firebrick;
+        height: 500px;
+        position: relative;
+    }
+    .center-content {
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        top: 35%;
+        left: 35%;
+    }
+    .content-wrapper {
+        padding: 2rem;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        opacity: 0.75;
+    }
+</style>
+</body>
+</html>
