@@ -82,3 +82,62 @@ body {
     top: 0;
     z-index: 0;
 }
+.vertical-container {
+    margin-bottom: 0;
+}
+.vertical-container img {
+    max-width: 100%;
+    height: auto;
+}
+.item-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+#banner-signup {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-image: url("img/signup.jpeg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.banner-signup-overlay {
+    background-color: #212529;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+#banner-signup .form-control {
+    background-image: none;
+    background-color: #fbfbfb;
+}
+.scroll-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background: rgba(52, 58, 64, 0.5);
+    line-height: 45px;
+}
+  
+.scroll-to-top:focus, .scroll-to-top:hover {
+    color: white;
+}
+  
+.scroll-to-top:hover {
+    background: #343a40;
+}
+  
+.scroll-to-top i {
+    font-weight: 800;
+}

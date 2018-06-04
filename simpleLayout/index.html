@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Simple Layout</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-calendar/1.2.1/github-calendar-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-calendar/1.2.1/github-calendar.css">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="page-top">
         <div class="header-bg"></div>
         <div class="header-overlay"></div>
         <div class="header-content">
@@ -49,7 +52,7 @@
         </div>
     </div>
 
-    <section style="background-color: aliceblue">
+    <section style="background-color: #efefef">
         <div class="container-fluid p-0">
             <div class="row no-gutters">
                 <div class="col-12 col-md-6 my-auto showcase-text">
@@ -85,13 +88,131 @@
         <div class="container-fluid">
             <div class="row justify-content-center text-center">
                 <div class="col-12">
-                    <h2 class="">Lorem ipsum dolor sit amet.</h2>
+                    <h2>Lorem ipsum dolor sit amet.</h2>
                     <button class="btn btn-raised btn-lg btn-warning">SEE MORE</button>
                 </div>
             </div>
         </div>
-
     </section>
+
+    <section>
+        <div class="container mt-3 pt-3">
+            <div class="text-center mb-5">
+                <h2>Unlimited Features, Unlimited Funs</h2>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 my-auto text-center">
+                    <div class="vertical-container">
+                        <img src="img/vertical.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-8 my-auto">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="item-container">
+                                    <h3>Lorem, ipsum dolor.</h3>
+                                    <p class="text-muted">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, facilis.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="item-container">
+                                    <h3>Lorem, ipsum dolor.</h3>
+                                    <p class="text-muted">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, facilis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="item-container">
+                                    <h3>Lorem, ipsum dolor.</h3>
+                                    <p class="text-muted">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, facilis.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="item-container">
+                                    <h3>Lorem, ipsum dolor.</h3>
+                                    <p class="text-muted">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, facilis.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner-signup">
+        <div class="banner-signup-overlay"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-9 mx-auto text-center">
+                    <h2 class="mb-4" style="color: #fbfbfb;">Ready to get started? Sign up now!</h2>
+                </div>
+                <div class="col-md-10 col-lg-9 col-xl-7 mx-auto">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-12 col-md-9 mb-2 mb-md-0">
+                                <input type="email" class="form-control form-control-lg" placeholder="Enter your email here....">
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <button class="btn btn-raised btn-block btn-lg btn-info">Sign up!</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid pt-5 mt-5 mb-5">
+            <div class="row">
+                <div class="col-12 text-center justify-content-center">
+                    <h2 class="mb-3">GitHub Calendar by <a href="https://github.com/IonicaBizau/github-calendar">IonicaBizau</a></h2>
+                    <div class="calendar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    
+    <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 220) {
+                $('.scroll-to-top').fadeIn(200);
+            } else {
+                $('.scroll-to-top').fadeOut(200);
+            }
+        });
+        $('.scroll-to-top').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 1000, 'easeInQuint');
+
+        });
+    </script>
+
+    <script>
+        GitHubCalendar(".calendar", "cc1683", {
+            responsive: true
+        });
+    </script>
     
 </body>
 </html>
