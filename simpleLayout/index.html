@@ -179,19 +179,110 @@
             <div class="row">
                 <div class="col-12 text-center justify-content-center">
                     <h2 class="mb-3">GitHub Calendar by <a href="https://github.com/IonicaBizau/github-calendar">IonicaBizau</a></h2>
-                    <div class="calendar"></div>
+                        <div class="calendar"></div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section style="background-color: #efefef">
+        <div class="container-fluid pt-5 mt-5 mb-5">
+            <div class="row">
+                <div class="col-12 text-center justify-content-center">
+                    <h2>Bootstrap Material Modal</h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="m-3">
+                    <button class="btn btn-raised-success" data-toggle="modal" data-target="#modal1">Modal 1</button>
+                </div>
+                <div class="m-3">
+                    <button class="btn btn-raised-success" data-toggle="modal" data-target="#modal2">Modal 2</button>
+                </div>
+                <div class="m-3">
+                    <button class="btn btn-raised-success" data-toggle="modal" data-target="#modal3">Modal 3</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal 1</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Modal 1 body content
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-prev">Prev</button>
+                <button type="button" class="btn btn-default btn-next">Next</button>
+                <button type="button" class="btn btn-raised btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal 2</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Modal 2 body content
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-prev">Prev</button>
+                <button type="button" class="btn btn-default btn-next">Next</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modal 3</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Modal 3 body content
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-prev">Prev</button>
+                <button type="button" class="btn btn-default btn-next">Next</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    
+
     <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
         <i class="fa fa-angle-up"></i>
     </a>
+
     <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-    
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+
     <script>
         $(window).scroll(function () {
             if ($(this).scrollTop() >= 220) {
@@ -208,9 +299,34 @@
         });
     </script>
 
+    <!-- modal script -->
+    <script>
+        $("div[id^='modal']").each(function(){
+        
+            var currentModal = $(this);
+            
+            //click next
+            currentModal.find('.btn-next').click(function(){
+                currentModal.modal('hide');
+                currentModal.closest("div[id^='modal']").nextAll("div[id^='modal']").first().modal('show'); 
+                
+            });
+            
+            //click prev
+            currentModal.find('.btn-prev').click(function(){
+                currentModal.modal('hide');
+                currentModal.closest("div[id^='modal']").prevAll("div[id^='modal']").first().modal('show'); 
+            });
+
+        });
+
+    </script>
+
     <script>
         GitHubCalendar(".calendar", "cc1683", {
-            responsive: true
+            responsive: true,
+            global_stats: false,
+            summary_text: "Newbie programmer's learning path!"
         });
     </script>
     

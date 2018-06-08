@@ -141,3 +141,17 @@ body {
 .scroll-to-top i {
     font-weight: 800;
 }
+
+/* modal overflow */
+#modal1, #modal2, #modal3 {
+    overflow-y: auto;
+    -ms-overflow-style: none;  
+    overflow: -moz-scrollbars-none;
+}
+
+#modal1::-webkit-scrollbar,
+#modal2::-webkit-scrollbar,
+#modal3::-webkit-scrollbar { 
+    display: none; 
+}
+/* Media Query */
