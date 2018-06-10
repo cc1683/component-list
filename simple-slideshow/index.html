@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Slideshow</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple slideshow</h1>
+        <img name="slideshow" alt="slide show images" src="">
+    </div>
+
+    <script>
+        var counter = 0;
+        var images = [];
+        var time = 3000;
+
+        images[0] = 'img/img-1.jpeg'
+        images[1] = 'img/img-2.jpeg'
+        images[2] = 'img/img-3.jpeg'
+        images[3] = 'img/img-4.jpeg'
+
+        function slideImg() {
+            document.slideshow.src= images[counter];
+            if(counter < images.length-1) {
+                counter ++;
+            }else {
+                counter = 0;
+            }
+
+            setTimeout("slideImg()", time);
+        }
+
+        window.onload = slideImg;
+    </script>
+    <style>
+        .container {
+            padding-right: 2rem;
+            padding-left: 2rem;
+            max-width: 960px;
+            text-align: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+    </style>
+    
+</body>
+</html>
