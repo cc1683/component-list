@@ -154,4 +154,9 @@ body {
 #modal3::-webkit-scrollbar { 
     display: none; 
 }
+
+.modal-body {
+    width: 800px;
+    height: auto;
+}
 /* Media Query */
