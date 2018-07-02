@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fullPage.js Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+</head>
+<body>
+    <div id="fullpage">
+        <div class="section" id="section-1">
+            <div class="container">
+                <div class="row text-center justify-content-center">
+                    <h1>Section 1</h1>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section-2">
+            <div class="container">
+                <div class="row text-center justify-content-center">
+                    <h1>Section 2</h1>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section-3">
+            <div class="container">
+                <div class="row text-center justify-content-center">
+                    <h1>Section 3</h1>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section-4">
+            <div class="container">
+                <div class="row text-center justify-content-center">
+                    <h1>Section 4</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        #section-1, #section-3 {
+            background-color: #dedede;
+        }
+        #section-2, #section-4 {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage();
+        });
+    </script>
+    
+</body>
+</html>
