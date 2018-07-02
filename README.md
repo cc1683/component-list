@@ -1,4 +1,13 @@
-# Preview #
-1. [Simple Layout Demo](https://cc1683.github.io/component_list/simpleLayout/)
-2. [Landing Layout Sample](https://cc1683.github.io/component_list/landingLayout/)
-3. [Another Landing Layout Sample](https://cc1683.github.io/component_list/landingLayout-2/)
+# Collection of front-end templates & components / libraries
+## Here I collect some of the custom/template front-end components and libraries
+
+- [Drag & drop with JS](https://cc1683.github.io/component-list/drag-and-drop-with-js)
+- [ParticlesJS interface](https://cc1683.github.io/component-list/particlesJS)
+- [Split page](https://cc1683.github.io/component-list/split-page)
+- [List icon](https://cc1683.github.io/component-list/list-icon)
+- [Simple image slideshow](https://cc1683.github.io/component-list/simple-slideshow)
+- [Tictactoe](https://cc1683.github.io/component-list/tictactoe)
+- [Landing page template-1](https://cc1683.github.io/component-list/landing-template-1)
+- [Landing page template-2](https://cc1683.github.io/component-list/landing-template-2)
+- [Custom layout-1](https://cc1683.github.io/component-list/custom-layout-1)
+- [Custom layout-2](https://cc1683.github.io/component-list/custom-layout-2)
