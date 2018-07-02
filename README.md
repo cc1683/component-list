@@ -11,3 +11,4 @@
 - [Landing page template-2](https://cc1683.github.io/component-list/landing-template-2)
 - [Custom layout-1](https://cc1683.github.io/component-list/custom-layout-1)
 - [Custom layout-2](https://cc1683.github.io/component-list/custom-layout-2)
+- [Chatting interface](https://cc1683.github.io/component-list/chatting-interface)
