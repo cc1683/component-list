@@ -13,3 +13,4 @@
 - [Custom layout-2](https://cc1683.github.io/component-list/custom-layout-2)
 - [Chatting interface](https://cc1683.github.io/component-list/chatting-interface)
 - [fullPage.js demo](https://cc1683.github.io/component-list/full-page-demo)
+- [Flex image gallery](https://cc1683.github.io/component-list/flex-gallery/)
