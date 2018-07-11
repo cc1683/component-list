@@ -1,0 +1,16 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 150px;
+    position: sticky;
+    top: 8px;
+}
+.img-wrapper {
+    background: #efefef;
+}
+.col-9 {
+    padding: 2em;
+}
