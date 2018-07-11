@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    padding: 0 2rem 0 2rem;
+}
+h1 {
+    text-align: left;
+}
+.img-wrapper {
+    text-align: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.img-container {
+    margin: 1em;
+    border: 1px solid #333333;
+}
+.img-container img {
+    width: 100%;
+}
