@@ -13,7 +13,13 @@ body, html {
 h1 {
     text-align: left;
 }
-.img-wrapper {
+/* image need to be same size */
+img {
+    float: left;
+    width: 30%;
+    margin: 1.66%;
+}
+/* .img-wrapper {
     text-align: center;
     margin: auto;
     display: grid;
@@ -25,4 +31,4 @@ h1 {
 }
 .img-container img {
     width: 100%;
-}
+} */
