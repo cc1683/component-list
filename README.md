@@ -16,3 +16,5 @@
 - [Flex image gallery](https://cc1683.github.io/component-list/flex-gallery/)
 - [Sticky logo](https://cc1683.github.io/component-list/sticky-logo/)
 - [Simple Photo Grid](https://cc1683.github.io/component-list/photo-grid/)
+- [Boostrap Landing](https://cc1683.github.io/component-list/bootstrap-startup-landing/) 
+##No Fully Mobile Responsive
