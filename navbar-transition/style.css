@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+    background: #333;
+}
+a {
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+main {
+    color: #efefef;
+    text-align: center;
+    padding: 4rem;
+    height: 100%;
+    overflow: hidden;
+}
+main h1 {
+    margin-top: 20vh;
+    font-size: 4rem;
+    color: orange;
+}
+.btn-menu {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    cursor: pointer;
+    z-index: 3;
+    transition: all 0.5s ease-out;
+}
+.btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #efefef;
+    transition: all 0.5s ease-out;
+}
+.btn-menu.close {
+    transform: rotate(180deg);
+}
+.btn-menu.close .btn-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.btn-menu.close .btn-line:nth-child(2) {
+    opacity: 0;
+}
+.btn-menu.close .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+}
+.menu.show {
+    visibility: visible;
+}
+.menu .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 30%;
+    height: 100vh;
+    overflow: hidden; 
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.6);
+    list-style: none;
+    transform: translate3d(0, 100%, 0);
+    transition: all 0.5s ease-out;
+}
+.menu-nav.show {
+    transform: translate3d(0,0,0);
+}
+.menu .nav-item {
+    transform: translate3d(-450px, 0, 0);
+    transition: all 0.5s ease-out;
+}
+.menu .nav-item.show {
+    transform: translate3d(0, 0, 0);
+}
+.menu .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #efefef;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: orange;
+}
+
+.nav-item:nth-child(1) {
+    transition-delay: 0.1s; 
+}
+  
+.nav-item:nth-child(2) {
+    transition-delay: 0.2s; 
+}
+  
+.nav-item:nth-child(3) {
+    transition-delay: 0.3s; 
+}
+  
+.nav-item:nth-child(4) {
+    transition-delay: 0.4s;
+}
+@media (max-width: 768px) {
+    .menu .menu-nav {
+        width: 100%;
+        background: #000;
+    }
+}
