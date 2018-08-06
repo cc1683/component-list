@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    opacity: 0.9;
+}
+
+nav a.navbar-brand {
+    font-size: 1.5em;
+}
+.carousel-item {
+    height: 100vh;
+    min-height: 100%;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} 
+
+#slide-1 {
+    background-image: url(img/img-1.jpeg);
+}
+
+#slide-2 {
+    background-image: url(img/img-2.jpeg);
+}
+
+#slide-3 {
+    background-image: url(img/img-3.jpeg);
+}
