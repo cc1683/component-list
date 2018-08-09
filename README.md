@@ -18,7 +18,8 @@
 - [Sticky logo](https://cc1683.github.io/component-list/sticky-logo/)
 - [Simple photo grid](https://cc1683.github.io/component-list/photo-grid/)
 - [Bootstrap landing](https://cc1683.github.io/component-list/bootstrap-startup-landing/)
-  ##No Fully Mobile Responsive
+  NOTE: **No Fully Mobile Responsive**
 - [Full page login form](https://cc1683.github.io/component-list/full-page-login/)
 - [Flex Column list](https://cc1683.github.io/component-list/flex-col-gallery/)
 - [NavBar Transition Site](https://cc1683.github.io/component-list/navbar-transition/)
+- [Background Image Slider](https://cc1683.github.io/component-list/background-img-slider/)
