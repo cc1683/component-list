@@ -23,3 +23,4 @@
 - [Flex Column list](https://cc1683.github.io/component-list/flex-col-gallery/)
 - [NavBar Transition Site](https://cc1683.github.io/component-list/navbar-transition/)
 - [Background Image Slider](https://cc1683.github.io/component-list/background-img-slider/)
+- [Yoba Landing Page](https://cc1683.github.io/component-list/Yoba-landing-page/)
